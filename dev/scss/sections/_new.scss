@@ -1,0 +1,132 @@
+/* =============
+    New
+============= */
+#new {
+
+    #new-title {
+        h1 {
+            color: var(--grey);
+            font-size: rem-calc(20);
+            font-weight: 400;
+            margin-bottom: 16px;
+
+            @include lg {
+                font-size: rem-calc(37);
+                font-weight: 300;
+            }
+        }
+    }
+
+    article {
+
+        @include md {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". new .";
+        }
+
+        @include xxl {
+            grid-template-columns: auto 1440px auto;
+        }
+
+        ul {
+
+            display: grid;
+            gap: 16px;
+
+            @include md {
+                grid-area: new;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "n1 n1 n2 n2"
+                    "n3 n3 n4 n4"
+                    ". n5 n5 .";
+            }
+
+            @include lg {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "n1 n1 n2 n2 n3 n3"
+                    ". n4 n4 n5 n5 .";
+            }
+
+
+            li {
+                background-color: var(--light-blue);
+                aside {
+                   height: 200px;
+                   background-size: cover;
+                   background-position: center;
+
+                   @include xl{
+                       height: 300px;
+                   }
+                }
+
+                section{
+                 
+                    padding: 16px;
+
+                    h2{
+                        font-size: rem-calc(27);
+                        font-weight: 600
+                    }
+
+                    p{
+                        margin: 8px 0 16px;
+                    }
+                }
+            }
+
+            #n1 {
+
+                @include md {
+                    grid-area: n1;
+                }
+                aside{
+                    background-image: url('../img/new/new-1.jpg');
+                }
+            }
+
+            #n2 {
+                @include md {
+                    grid-area: n2;
+                }
+                aside{
+                    background-image: url('../img/new/new-2.jpg');
+                }
+            }
+
+            #n3 {
+                @include md {
+                    grid-area: n3;
+                }
+                aside{
+                    background-image: url('../img/new/new-3.jpg');
+                }
+            }
+
+            #n4 {
+                @include md {
+                    grid-area: n4;
+                }
+                aside{
+                    background-image: url('../img/new/new-4.jpg');
+
+                    @include xl{
+                        background-position: center top;
+                    }
+                }
+            }
+
+            #n5 {
+                @include md {
+                    grid-area: n5;
+                }
+                aside{
+                    background-image: url('../img/new/new-5.jpg');
+                }
+            }
+        }
+    }
+}

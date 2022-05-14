@@ -1,0 +1,14 @@
+/* =============
+    Buttons
+============= */
+button{
+    margin: 0;
+    padding: 0;
+}
+
+.orange-button{
+    background-color: var(--light-orange);
+    border: none;
+    color: var(--white);
+    padding: 6px 14px;
+}

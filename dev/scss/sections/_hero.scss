@@ -1,0 +1,155 @@
+/* =============
+    Hero
+============= */
+#hero {
+
+    #hero-img {
+        width: 100vw;
+        height: 50vh;
+        background-image: url('../img/hero/hero.jpg');
+        background-size: cover;
+        // x: left | center | right
+        // y: top | center | bottom
+        background-position: center;
+
+        // @include md{
+        //     height: 20vh;
+        // }
+
+        @include lg{
+            height: 70vh;
+        }
+    }
+
+    article {
+        color: var(--white);
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+        .hero-info-cards{
+            
+            display: flex;
+            align-items: center;
+
+            button {
+                background-color: transparent;
+                border: none;
+                font-size: rem-calc(18);
+                font-weight: 700;
+                color: var(--white);
+                margin-left: auto;
+                @include lg{
+                    display: flex;
+                    align-items: center;
+                }
+
+                img{
+                    @include md{
+                        margin-left: 8px;
+                    }
+                }
+            }
+           
+        }
+
+        #hero-checklist {
+            background-color: var(--orange);
+            padding: 16px;
+
+            @include xxl {
+                grid-template-columns: auto 720px 16px;
+
+            }
+        }
+
+        #hero-location {
+            background-color: var(--light-orange);
+            padding: 16px;
+
+            @include xxl {
+                grid-template-columns: 16px 720px auto;
+            }
+
+            p{
+                // color: var(--black);
+                span{
+                    font-weight: 700;
+                    // font-size: rem-calc(50);
+                }
+            }
+        }
+    }
+}
+
+#hero-sub-container {
+    display: grid;
+
+    @include md {
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". hero-sub .";
+    }
+
+    @include xl {
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+        grid-area: hero-sub;
+        display: grid;
+        gap: 24px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+        }
+
+        #planning {
+            aside{
+                background-image: url('../img/hero/planning.jpg');
+                background-position: 16% 40%;
+            }
+        }
+
+        #tickets {
+            aside{
+                background-image: url('../img/hero/tickets.jpg');
+                background-position: 53% 68%;
+            }
+        }
+
+        .hero-sub-content {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 16px;
+
+            display: flex;
+            align-items: center;
+
+            .circle-container{
+                margin-left: auto;
+            }
+
+            h1{
+                font-weight: 400;
+            }
+
+            button{
+                margin-top: 16px;
+            }
+
+
+            aside{
+                width: 85px;
+                height: 85px;
+                border-radius: 100%;
+                border: 4px solid var(--white);
+
+                @include md{
+                    width: 113px;
+                    height: 113px;
+                }
+            }
+        }
+    }
+}
