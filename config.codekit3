@@ -187,7 +187,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
@@ -195,7 +195,15 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
+      "oAP" : "\/delpoy\/index.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
@@ -203,11 +211,11 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
-    "\/dev\/content\/new.kit" : {
+    "\/dev\/content\/skills.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
@@ -215,19 +223,11 @@
       "oAP" : "\/delpoy\/index.html",
       "oF" : 3
     },
-    "\/dev\/content\/search.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/delpoy\/index.html",
-      "oF" : 2
-    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
@@ -235,7 +235,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
@@ -243,7 +243,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/delpoy\/index.html",
       "oF" : 2
     },
